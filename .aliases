@@ -1,0 +1,3 @@
+# Personal
+alias dot='cd /Users/dkelly/dotFiles/personal/'
+alias ll='ls -l'
