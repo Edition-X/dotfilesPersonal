@@ -13,3 +13,4 @@ which shopt > /dev/null && shopt -s histappend  # append to history, don't owerw
 # Save and reoad the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
+export PATH="/usr/local/sbin:$PATH"
