@@ -1,3 +1,6 @@
 # Personal
 alias dot='cd /Users/dkelly/dotFiles/personal/'
+alias vimrc='vim ~/.vimrc'
+alias vimal='vim ~/.aliases'
 alias ll='ls -l'
+alias lla='ls -lA'

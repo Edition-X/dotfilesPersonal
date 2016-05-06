@@ -10,10 +10,14 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
-Plugin 'tmhedberg/SimpylFold' 		" Allows for better folding
-Plugin 'vim-scripts/indentpython.vim' 	" Allows for better indentation
-Plugin 'scrooloose/syntastic'		" Syntax highlighting
-Plugin 'nvie/vim-flake8'		" Addition Python syntax hightling
+Plugin 'tmhedberg/SimpylFold' 		  " Allows for better folding
+Plugin 'vim-scripts/indentpython.vim' 	  " Allows for better indentation
+Plugin 'scrooloose/syntastic'		  " Syntax highlighting
+Plugin 'nvie/vim-flake8'		  " Addition Python syntax hightling
+Plugin 'jnurmine/Zenburn'		  " Colour scheme terminal
+Plugin 'altercation/vim-colors-solarized' " Colour scheme in GUI mode
+Plugin 'scrooloose/nerdtree'		  " Tree file structure in Vim
+Plugin 'jistr/vim-nerdtree-tabs'	  " Make Tabs better for NerdTree
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,3 +60,27 @@ syntax on
 
 " Line Numbering
 set nu
+
+" Colours
+set t_Co=256
+" Which colour scheme to use
+if has('gui_running')
+  set background=dark
+  colorscheme solarized
+else
+  colorscheme zenburn
+endif  
+" Use F5 to switch colours in Vim
+call togglebg#map("<F5>")
+
+" NerdTree
+" Opens NerdTree with Ctrl+N
+map <C-n> :NERDTreeToggle<CR>
+" Start NerdTree automatically
+autocmd vimenter * NERDTree
+" Close Vim if only NerdTree is left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Show hidden files by default
+let NERDTreeShowHidden=1
+" Hide .pyc files 
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
