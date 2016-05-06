@@ -92,3 +92,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let NERDTreeShowHidden=1
 " Hide .pyc files 
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+
+"Make Backspace work
+set backspace=indent,eol,start

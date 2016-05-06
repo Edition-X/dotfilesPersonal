@@ -1,7 +1,29 @@
+# Easier navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+# mv, rm, cp
+alias mv='mv -v'
+alias cp='cp -v'
+alias rm='rm -i -v'
+
+# use coreutils `ls` if possible…
+hash gls >/dev/null 2>&1 || alias gls="ls"
+
+# always use color, even when piping (to awk,grep,etc)
+if gls --color > /dev/null 2>&1; then colorflag="--color"; else colorflag="-G"; fi;
+export CLICOLOR_FORCE=1
+
+alias ls='gls -AFh ${colorflag} --group-directories-first'
+alias lsd='ls -l | grep "^d"' # only directories
+
 # Personal
 alias dot='cd /Users/dkelly/dotFiles/personal/'
-alias rc='source ~/.aliases'
-alias vimrc='vim ~/.vimrc'
+alias rc='source ~/.bash_profile'
+alias vimvrc='vim ~/.vimrc'
+alias vimrc='vim ~/.bash_profile'
 alias vimal='vim ~/.aliases'
 alias ll='ls -ltrA'
-alias ls='ls -A'
+alias wq='clear'
