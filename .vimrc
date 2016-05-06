@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 " call vundle#begin('~/some/path/here')
-
+        	
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
@@ -32,6 +32,14 @@ nnoremap <space> za
 
 let g:SimpylFold_docstring_preview=1
 
+"Default Tabbing = 4
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
 " PEP 8 
 au BufNewFile,BufRead *.py
     \ set tabstop=4
@@ -43,7 +51,7 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix
 
 " Other file types
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js, *.html, *.css, .*
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
