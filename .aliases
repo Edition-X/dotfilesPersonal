@@ -53,6 +53,8 @@ alias emptytrash=' \
 alias brew_update='brew -v update; brew upgrade --force-bottle --cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u'
 
 # Personal
+# Locations
+alias drive="cd ~/'Google Drive'"
 alias dot='cd /Users/dkelly/dotFiles/personal/'
 alias rc='source ~/.bash_profile'
 alias vimvrc='vim ~/.vimrc'
