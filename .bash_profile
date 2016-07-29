@@ -14,3 +14,12 @@ which shopt > /dev/null && shopt -s histappend  # append to history, don't owerw
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 export PATH="/usr/local/sbin:$PATH"
+
+##
+# Your previous /Users/dkelly/.bash_profile file was backed up as /Users/dkelly/.bash_profile.macports-saved_2016-05-18_at_16:25:40
+##
+
+# MacPorts Installer addition on 2016-05-18_at_16:25:40: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+

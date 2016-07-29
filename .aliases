@@ -32,7 +32,7 @@ function clone() {
 alias push='git push'
 alias pull='git pull'
 # Push Master
-alias pushm'git push origin master'
+alias pushm='git push origin master'
 # Pull rebase
 alias pullr='git pull --rebase'
 # Master checkout
