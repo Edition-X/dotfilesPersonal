@@ -1,0 +1,45 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost 
+
+##############
+#   Maxeda   #
+#############
+
+# ACC Nodes
+10.227.137.59   acc-csi # Windows
+10.227.137.88   acc-hybrisBE
+10.227.137.56   acc-hybrisFE1
+10.227.137.54   acc-hybrisFE2
+10.227.137.55   acc-hybrisFE3
+10.227.137.53   acc-hybrisFE4
+10.227.137.52   acc-nfs
+10.227.137.58   acc-servicemix
+10.227.137.5    acc-web1
+10.227.137.7    acc-web2
+10.227.136.70   acc-clamav
+
+# STAGING Nodes
+10.227.137.87   staging-hybris-smix
+10.227.137.11   staging-web1
+
+# PRDO Nodes
+10.227.136.57   prd-csi
+10.227.136.60   prd-hybrisFE4
+10.227.136.84   prd-hybrisBE
+10.227.136.54   prd-hybrisFE1
+10.227.136.72   prd-hybrisFE2
+10.227.136.56   prd-hybrisFE3
+10.227.136.155  prd-management
+10.227.136.69   prd-nfs
+10.227.136.61   prd-servicemix
+10.227.136.10   prd-web1
+10.227.136.20   prd-web2
+10.227.136.28   prd-web3
+
