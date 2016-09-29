@@ -19,6 +19,8 @@ Plugin 'altercation/vim-colors-solarized' " Colour scheme in GUI mode
 Plugin 'scrooloose/nerdtree'		  " Tree file structure in Vim
 Plugin 'jistr/vim-nerdtree-tabs'	  " Make Tabs better for NerdTree
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}  " Status bar
+Plugin 'https://github.com/m-kat/aws-vim' "Text Complete for AWS CloudFormation
+Plugin 'elzr/vim-json' " JSON syntax highlighting
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
