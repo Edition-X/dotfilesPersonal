@@ -85,7 +85,7 @@ call togglebg#map("<F5>")
 " Opens NerdTree with Ctrl+N
 map <C-n> :NERDTreeToggle<CR>
 " Start NerdTree automatically
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 " Close Vim if only NerdTree is left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Show hidden files by default
