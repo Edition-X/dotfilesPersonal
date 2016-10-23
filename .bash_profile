@@ -23,3 +23,13 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+# Added ssh keys to other boxes.
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+    eval `ssh-agent -s`
+    # ssh-agent bash # enable this if you'd like to have a ssh-keychain with multiple keys preloaded.
+    # ssh-add ~/.ssh/keyname
+    ssh-add ~/.ssh/id_*
+fi
+  
+source ~/.gotoMaxedaAWS.sh # Everytime a terminal is opened this file will be sourced.
+# ssh-agent bash # enable this if you'd like to have a ssh-keychain with multiple keys preloaded.

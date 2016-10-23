@@ -21,6 +21,7 @@ Plugin 'jistr/vim-nerdtree-tabs'	  " Make Tabs better for NerdTree
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}  " Status bar
 Plugin 'https://github.com/m-kat/aws-vim' "Text Complete for AWS CloudFormation
 Plugin 'elzr/vim-json' " JSON syntax highlighting
+Plugin 'pearofducks/ansible-vim' " Ansible 2.0, it supports YAML playbooks, Jinja2 templates, and Ansible's hosts files
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
