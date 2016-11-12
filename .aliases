@@ -52,6 +52,9 @@ alias emptytrash=' \
 # Update installed Ruby gems, Homebrew, npm and their installed packages
 alias brew_update='brew -v update; brew upgrade --force-bottle --cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u'
 
+# Speedtest
+alias speedtest="curl -o /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
+
 # Personal
 # Locations
 alias drive="cd ~/'Google Drive'"
