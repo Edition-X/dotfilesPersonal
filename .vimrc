@@ -23,6 +23,17 @@ Plugin 'https://github.com/m-kat/aws-vim' "Text Complete for AWS CloudFormation
 Plugin 'elzr/vim-json' " JSON syntax highlighting
 Plugin 'pearofducks/ansible-vim' " Ansible 2.0, it supports YAML playbooks, Jinja2 templates, and Ansible's hosts files
 
+" Check for errors on opening a docuement
+let g:syntastic_check_on_open = 1
+
+" Cooler error and warning symbols
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "<img draggable="false" class="emoji" alt="⚠" src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26a0.svg">"
+
+
+" JSON formatting, allows double quotes to show in json file
+let g:vim_json_syntax_conceal = 0
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -99,3 +110,4 @@ set backspace=indent,eol,start
 
 " System clipboard
 set clipboard=unnamed
+
