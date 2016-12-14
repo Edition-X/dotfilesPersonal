@@ -21,14 +21,21 @@ Plugin 'jistr/vim-nerdtree-tabs'	  " Make Tabs better for NerdTree
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}  " Status bar
 Plugin 'https://github.com/m-kat/aws-vim' "Text Complete for AWS CloudFormation
 Plugin 'elzr/vim-json' " JSON syntax highlighting
-Plugin 'pearofducks/ansible-vim' " Ansible 2.0, it supports YAML playbooks, Jinja2 templates, and Ansible's hosts files
+"Plugin 'pearofducks/ansible-vim' " Ansible 2.0, it supports YAML playbooks, Jinja2 templates, and Ansible's hosts files
+Plugin 'erikzaadi/vim-ansible-yaml' " Ansible syntax - http://erikzaadi.com/2015/11/15/linting-ansible-yaml-in-vim/
+" Recomender settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-" Check for errors on opening a docuement
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Cooler error and warning symbols
-let g:syntastic_error_symbol = "✗"
-let g:syntastic_warning_symbol = "<img draggable="false" class="emoji" alt="⚠" src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26a0.svg">"
+"let g:syntastic_error_symbol = "✗"
+"let g:syntastic_warning_symbol = "<img draggable="false" class="emoji" alt="⚠" src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/26a0.svg">"
 
 
 " JSON formatting, allows double quotes to show in json file
