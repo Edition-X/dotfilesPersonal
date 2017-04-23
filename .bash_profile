@@ -28,8 +28,10 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
     eval `ssh-agent -s`
     # ssh-agent bash # enable this if you'd like to have a ssh-keychain with multiple keys preloaded.
     # ssh-add ~/.ssh/keyname
-    ssh-add ~/.ssh/id_*
+    ssh-add ~/.ssh/*
 fi
   
 source ~/.gotoMaxedaAWS.sh # Everytime a terminal is opened this file will be sourced.
 # ssh-agent bash # enable this if you'd like to have a ssh-keychain with multiple keys preloaded.
+
+export PATH=~/Library/Python/2.7/bin:$PATH

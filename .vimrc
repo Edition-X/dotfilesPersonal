@@ -56,24 +56,24 @@ let g:SimpylFold_docstring_preview=1
 
 "Default Tabbing = 4
 " show existing tab with 4 spaces width
-set tabstop=4
+set tabstop=2
 " when indenting with '>', use 4 spaces width
-set shiftwidth=4
+set shiftwidth=2
 " On pressing tab, insert 4 spaces
 set expandtab
 
 " PEP 8 
 "au BufNewFile,BufRead *.py
-"    \ set softtabstop=4
+"    \ set softtabstop=2
 "    \ set textwidth=79
 "    \ set autoindent
 "    \ set fileformat=unix
 
 " Other file types
-au BufNewFile,BufRead *.js, *.html, *.css, .*
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
+"au BufNewFile,BufRead *.js, *.html, *.css, .*
+"    \ set tabstop=2
+"    \ set softtabstop=2
+"    \ set shiftwidth=2
 
 " Highlight extra whitespace
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
@@ -117,4 +117,3 @@ set backspace=indent,eol,start
 
 " System clipboard
 set clipboard=unnamed
-

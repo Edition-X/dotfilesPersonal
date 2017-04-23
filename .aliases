@@ -30,7 +30,7 @@ function clone() {
     npm install
 }
 
-alias status='git status'
+alias stt='git status'
 alias push='git push'
 alias pull='git pull'
 # Push Master
