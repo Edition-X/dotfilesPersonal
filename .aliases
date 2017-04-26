@@ -30,9 +30,17 @@ function clone() {
     npm install
 }
 
-alias stt='git status'
-alias push='git push'
-alias pull='git pull'
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+alias gp='git pull'
+alias got='git '
+alias get='git '
 # Push Master
 alias pushm='git push origin master'
 # Pull rebase
