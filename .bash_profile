@@ -31,7 +31,7 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
     ssh-add ~/.ssh/*
 fi
   
-source ~/.gotoMaxedaAWS.sh # Everytime a terminal is opened this file will be sourced.
+source ~/dotFiles/personal/ansibleVaultPass.sh # Everytime a terminal is opened this file will be sourced.
 # ssh-agent bash # enable this if you'd like to have a ssh-keychain with multiple keys preloaded.
 
 export PATH=~/Library/Python/2.7/bin:$PATH
