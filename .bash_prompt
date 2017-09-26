@@ -62,7 +62,7 @@ set_prompts() {
     function usernamehost() {
 
         # Highlight the user name when logged in as root.
-        if [[ "${USER}" == *"root" || $HOSTNAME =~ ^p ]]; then
+        if [[ "${USER}" == *"root" ]]; then
             userStyle="${red}";
         else
             userStyle="${magenta}";
