@@ -28,10 +28,16 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
     eval `ssh-agent -s`
     # ssh-agent bash # enable this if you'd like to have a ssh-keychain with multiple keys preloaded.
     # ssh-add ~/.ssh/keyname
-    ssh-add ~/.ssh/*
+    ssh-add ~/.ssh/id_rsa
 fi
   
-source ~/dotFiles/personal/ansibleVaultPass.sh # Everytime a terminal is opened this file will be sourced.
+source ~/ansibleVaultPass.sh # Everytime a terminal is opened this file will be sourced.
 # ssh-agent bash # enable this if you'd like to have a ssh-keychain with multiple keys preloaded.
 
 export PATH=~/Library/Python/2.7/bin:$PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/dkelly/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/dkelly/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/dkelly/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/dkelly/Downloads/google-cloud-sdk/completion.bash.inc'; fi

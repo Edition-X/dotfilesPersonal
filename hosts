@@ -32,7 +32,7 @@
 
 # PRD Nodes
 10.227.136.57   prd-csi # Windows
-10.227.136.60   prd-hybrisFE4
+#10.227.136.60   prd-hybrisFE4
 10.227.136.84   prd-hybrisBE
 10.227.136.54   prd-hybrisFE1
 10.227.136.72   prd-hybrisFE2
@@ -47,3 +47,4 @@
 # IMH Nodes
 10.129.38.19    imh-management
 ip hostname
+

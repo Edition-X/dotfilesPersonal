@@ -23,6 +23,7 @@ Plugin 'https://github.com/m-kat/aws-vim' "Text Complete for AWS CloudFormation
 Plugin 'elzr/vim-json' " JSON syntax highlighting
 "Plugin 'pearofducks/ansible-vim' " Ansible 2.0, it supports YAML playbooks, Jinja2 templates, and Ansible's hosts files
 Plugin 'erikzaadi/vim-ansible-yaml' " Ansible syntax - http://erikzaadi.com/2015/11/15/linting-ansible-yaml-in-vim/
+Plugin 'tpope/vim-fugitive' " Ansible syntax - http://erikzaadi.com/2015/11/15/linting-ansible-yaml-in-vim/
 " Recomender settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -117,3 +118,11 @@ set backspace=indent,eol,start
 
 " System clipboard
 set clipboard=unnamed
+
+" vimdiff stuff for merging
+set laststatus=2 "show the status line
+set statusline=%-10.3n  "buffer number
+" Doesn't seem to work for me :(
+"map <silent> <leader>2 :diffget 2<CR>
+"map <silent> <leader>3 :diffget 3<CR>
+"map <silent> <leader>4 :diffget 4<CR>

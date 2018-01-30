@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Tmux broadcast to all panes in current session and current window
+function bc() {
+ currentSession=$(tmux list-sessions | grep attached | awk '{print $1}' | rev | cut -c 2- | rev)
+ currentWindow=$(tmux list-windows | grep active | awk '{print $2}' | rev | cut -c 2- | rev) 
+ currentPanes=$(tmux list-panes | awk '{print $1}' | rev | cut -c 2- | rev)
+
+ for i in `seq $currentPanes`; do tmux send-keys -t $currentSession:$currentWindow.$i -l "$@";done
+}
+
 # Create a new directory and enter it
 function md() {
 	mkdir -p "$@" && cd "$@"
