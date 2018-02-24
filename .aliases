@@ -68,7 +68,8 @@ alias speedtest="curl -o /dev/null http://speedtest.wdc01.softlayer.com/download
 # Personal
 # Locations
 alias drive="cd ~/'Google Drive'"
-alias dot='cd /Users/dkelly/dotFiles/personal/'
+alias dot='cd /Users/dkelly/Documents/dotFiles/personal/'
+alias doc='cd /Users/dkelly/Documents'
 alias rc='source ~/.bash_profile'
 alias vimvrc='vim ~/.vimrc'
 alias vimrc='vim ~/.bash_profile'
