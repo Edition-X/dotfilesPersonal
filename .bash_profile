@@ -13,15 +13,7 @@ which shopt > /dev/null && shopt -s histappend  # append to history, don't owerw
 # Save and reoad the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
-export PATH="/usr/local/sbin:$PATH"
-
-##
-# Your previous /Users/dkelly/.bash_profile file was backed up as /Users/dkelly/.bash_profile.macports-saved_2016-05-18_at_16:25:40
-##
-
-# MacPorts Installer addition on 2016-05-18_at_16:25:40: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-# Finished adapting your PATH environment variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/sbin:$PATH"
 
 # Added ssh keys to other boxes.
 if [ -z "$SSH_AUTH_SOCK" ] ; then
@@ -34,7 +26,8 @@ fi
 source ~/ansibleVaultPass.sh # Everytime a terminal is opened this file will be sourced.
 # ssh-agent bash # enable this if you'd like to have a ssh-keychain with multiple keys preloaded.
 
-export PATH=~/Library/Python/2.7/bin:$PATH
+# Removing to see if it affects anything
+#export PATH=~/Library/Python/2.7/bin:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/dkelly/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/dkelly/Downloads/google-cloud-sdk/path.bash.inc'; fi
