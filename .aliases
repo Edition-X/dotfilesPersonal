@@ -30,12 +30,12 @@ function clone() {
     npm install
 }
 
-alias gs='git status '
-alias ga='git add '
+alias gs='git status'
+alias ga='git add'
 alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
-alias go='git checkout '
+alias go='git checkout'
 alias gk='gitk --all&'
 alias gx='gitx --all'
 alias gp='git pull'
@@ -73,6 +73,6 @@ alias rc='source ~/.bash_profile'
 alias vimvrc='vim ~/.vimrc'
 alias vimrc='vim ~/.bash_profile'
 alias vimal='vim ~/.aliases'
-alias ll='ls -ltrA'
+alias ll='ls -l'
 alias wq='clear'
 alias svim='sudo vim'
