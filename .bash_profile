@@ -23,6 +23,7 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
     ssh-add ~/.ssh/id_rsa
 fi
   
+# This adds AWS and ansibel env_vars
 source ~/ansibleVaultPass.sh # Everytime a terminal is opened this file will be sourced.
 # ssh-agent bash # enable this if you'd like to have a ssh-keychain with multiple keys preloaded.
 
