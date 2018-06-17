@@ -18,12 +18,13 @@ Plugin 'jnurmine/Zenburn'		  " Colour scheme terminal
 Plugin 'altercation/vim-colors-solarized' " Colour scheme in GUI mode
 Plugin 'scrooloose/nerdtree'		  " Tree file structure in Vim
 Plugin 'jistr/vim-nerdtree-tabs'	  " Make Tabs better for NerdTree
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}  " Status bar
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}  " Status bar
 Plugin 'https://github.com/m-kat/aws-vim' "Text Complete for AWS CloudFormation
 Plugin 'elzr/vim-json' " JSON syntax highlighting
 "Plugin 'pearofducks/ansible-vim' " Ansible 2.0, it supports YAML playbooks, Jinja2 templates, and Ansible's hosts files
 Plugin 'erikzaadi/vim-ansible-yaml' " Ansible syntax - http://erikzaadi.com/2015/11/15/linting-ansible-yaml-in-vim/
 Plugin 'tpope/vim-fugitive' " Ansible syntax - http://erikzaadi.com/2015/11/15/linting-ansible-yaml-in-vim/
+Plugin 'hashivim/vim-terraform'
 " Recomender settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}

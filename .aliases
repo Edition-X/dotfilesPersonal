@@ -77,3 +77,8 @@ alias vimal='vim ~/.aliases'
 alias ll='ls -l'
 alias wq='clear'
 alias svim='sudo vim'
+
+# Switch to Mirabeau Env Vars
+alias mira=". /Users/dkelly/MirabeauEnvVars.sh && echo 'Mirabeau Env Vars'"
+# Switch to Maxeda Env Vars
+alias max=". /Users/dkelly/MaxedaEnvVars.sh && echo 'Maxeda Env Vars'"

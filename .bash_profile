@@ -24,12 +24,12 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
 fi
   
 # This adds AWS and ansibel env_vars
-source ~/ansibleVaultPass.sh # Everytime a terminal is opened this file will be sourced.
+source /Users/dkelly/MaxedaEnvVars.sh # Everytime a terminal is opened this file will be sourced.
 # ssh-agent bash # enable this if you'd like to have a ssh-keychain with multiple keys preloaded.
 
-# Removing to see if it affects anything
-#export PATH=~/Library/Python/2.7/bin:$PATH
-
+# Add ansible bin location to PATH - May need to be updated when ansible or python is updated
+export PATH=/usr/local/Cellar/python@2/2.7.14_3/Frameworks/Python.framework/Versions/2.7/bin:$PATH
+#export PYTHONPATH=/Users/dkelly/Library/Python/2.7/lib/python/site-packages
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/dkelly/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/dkelly/Downloads/google-cloud-sdk/path.bash.inc'; fi
 
