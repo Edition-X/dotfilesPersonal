@@ -7,7 +7,7 @@ alias .....='cd ../../../..'
 # mv, rm, cp
 alias mv='mv -v'
 alias cp='cp -v'
-alias rm='rm -i -v'
+alias rm='rm -vrf'
 
 # use coreutils `ls` if possible…
 #hash gls >/dev/null 2>&1 || alias gls="ls"
@@ -67,16 +67,15 @@ alias speedtest="curl -o /dev/null http://speedtest.wdc01.softlayer.com/download
 
 # Personal
 # Locations
-alias drive="cd ~/'Google Drive'"
-alias dot='cd /Users/dkelly/Documents/dotFiles/personal/'
-alias doc='cd /Users/dkelly/Documents'
-alias rc='source ~/.bash_profile'
-alias vimvrc='vim ~/.vimrc'
-alias vimrc='vim ~/.bash_profile'
-alias vimal='vim ~/.aliases'
-alias ll='ls -l'
-alias wq='clear'
-alias svim='sudo vim'
+alias dot="cd /Users/dkelly/Dan/My\ Documents/dotFiles/personal/"
+alias doc="cd /Users/dkelly/Dan"
+alias rc="source ~/.bash_profile"
+alias vimvrc="vim ~/.vimrc"
+alias vimrc="vim ~/.bash_profile"
+alias vimal="vim ~/.aliases"
+alias ll="ls -l"
+alias wq="clear"
+alias svim="sudo vim"
 
 # Switch to Mirabeau Env Vars
 alias mira=". /Users/dkelly/MirabeauEnvVars.sh && echo 'Mirabeau Env Vars'"
