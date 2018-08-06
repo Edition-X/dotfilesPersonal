@@ -24,7 +24,7 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
 fi
   
 # This adds AWS and ansibel env_vars
-source /Users/dkelly/MaxedaEnvVars.sh # Everytime a terminal is opened this file will be sourced.
+#source /Users/dkelly/MaxedaEnvVars.sh # Everytime a terminal is opened this file will be sourced.
 # ssh-agent bash # enable this if you'd like to have a ssh-keychain with multiple keys preloaded.
 
 # Add ansible bin location to PATH - May need to be updated when ansible or python is updated
