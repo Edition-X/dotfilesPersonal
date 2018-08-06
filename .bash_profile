@@ -35,3 +35,8 @@ if [ -f '/Users/dkelly/Downloads/google-cloud-sdk/path.bash.inc' ]; then source 
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/dkelly/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/dkelly/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+# Unset AWS Env vars if set
+unset AWS_ACCESS_KEY_ID
+unset AWS_SECRET_ACCESS_KEY
+unset AWS_DEFAULT_REGION
