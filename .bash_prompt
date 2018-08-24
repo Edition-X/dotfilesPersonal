@@ -68,7 +68,7 @@ set_prompts() {
             userStyle="${cyan}";
         fi;
 
-        if [[ "${HOSTNAME}" == p* ]]; then
+        if [[ "${HOSTNAME}" == intgam* ]]; then
             hostStyle="${red}"
         else
             hostStyle="${purple}"
@@ -170,4 +170,4 @@ set_prompts() {
 set_prompts
 unset set_prompts
 #Add python 3.7 bin to PATH
-export PATH=$PATH:/Users/dkelly/Library/Python/3.7/bin
+#export PATH=$PATH:/Users/dkelly/Library/Python/3.7/bin
