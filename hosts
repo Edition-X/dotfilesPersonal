@@ -50,3 +50,15 @@ ip hostname
 
 # Mirabeau
 10.129.9.25 checkmk
+
+#Intergamma
+10.129.46.120   intgam-prd-web-02
+10.129.45.220   intgam-prd-web-01
+10.129.46.138   intgam-acc-web-01
+10.129.45.154   intgam-mgmt-01
+10.129.44.95    intgam-prd-intgrt-01
+10.129.46.24    intgam-acc-db-01
+10.129.46.52    intgam-prd-kdb-01
+10.129.46.163   intgam-prd-db-02
+10.129.45.155   intgam-prd-db-01
+10.129.49.88    intgam-atl-web-02
