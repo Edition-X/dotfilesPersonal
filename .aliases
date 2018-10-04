@@ -18,6 +18,13 @@ alias rm='rm -vrf'
 #
 #alias ls='gls -AFh ${colorflag} --group-directories-first'
 #alias lsd='ls -l | grep "^d"' # only directories
+#
+#Use coreutils ls
+alias ls='gls --color'
+alias ll='gls -l --color'
+alias lss='gls -lA --color | grep "^l"'
+alias lsd='gls -lA --color | grep "^d"'
+
 
 ###########
 # GIT STUFF#
@@ -67,15 +74,18 @@ alias speedtest="curl -o /dev/null http://speedtest.wdc01.softlayer.com/download
 
 # Personal
 # Locations
-alias dot="cd /Users/dkelly/Dan/My\ Documents/dotFiles/personal/"
-alias doc="cd /Users/dkelly/Dan"
+alias dot="cd ~/Dan/My\ Documents/dotFiles/personal/"
+alias docs="cd ~/Dan/My\ Documents/"
 alias rc="source ~/.bash_profile"
-alias vimvrc="vim ~/.vimrc"
-alias vimrc="vim ~/.bash_profile"
-alias vimal="vim ~/.aliases"
-alias ll="ls -l"
+alias repo="cd ~/Dan/Intergamma/repos/"
+alias grep="grep --color -RIn"
+alias grp="| grep --color -i"
+alias vivrc="vi ~/.vimrc"
+alias virc="vi ~/.bash_profile"
+alias vial="vi ~/.aliases"
 alias wq="clear"
-alias svim="sudo vim"
+alias svi="sudo vi"
+alias ci='vi'
 
 # Switch to Mirabeau Env Vars
 alias mira=". '/Users/dkelly/Dan/Mirabeau/AWS Environment Variables/MirabeauEnvVars.sh' && echo 'Mirabeau Env Vars'"
