@@ -1,21 +1,27 @@
-if [ ! -d dotfiles ]; then
-  mkdir dotfiles
-  cd dotfiles
-  git clone -b Linux https://github.com/Edition-X/dotfilesPersonal.git .
-  cd
-  ln -sf $HOME/dotfiles/.bashrc $HOME/.bashrc
-  ln -sf $HOME/dotfiles/.bash_profile $HOME/.bash_profile
-  ln -sf $HOME/dotfiles/.bash_prompt $HOME/.bash_prompt
-  ln -sf $HOME/dotfiles/.inputrc $HOME/.inputrc
-  ln -sf $HOME/dotfiles/.functions $HOME/.functions
-  ln -sf $HOME/dotfiles/.aliases $HOME/.aliases
-  ln -sf $HOME/dotfiles/.vimrc $HOME/.vimrc
-  source .bashrc
+if [ $USER == "dkelly" ]; then
+  if [ ! -d dotfiles ]; then
+    mkdir dotfiles
+    mkdir -p .vim/bundle
+    cd dotfiles
+    git clone -b Linux https://github.com/Edition-X/dotfilesPersonal.git .
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    cd
+    ln -sf $HOME/dotfiles/.bashrc $HOME/.bashrc
+    ln -sf $HOME/dotfiles/.bash_profile $HOME/.bash_profile
+    ln -sf $HOME/dotfiles/.bash_prompt $HOME/.bash_prompt
+    ln -sf $HOME/dotfiles/.functions $HOME/.functions
+    ln -sf $HOME/dotfiles/.aliases $HOME/.aliases
+    ln -sf $HOME/dotfiles/.vimrc $HOME/.vimrc
+    source .bashrc
+    echo "First login! Dotfiles added"
+  else
+    cd dotfiles
+    git pull
+    cd
+    source .bashrc
+    echo "Pulling dotfiles"
+  fi
+else
+  echo "User: $USER, ignoring personal dotfiles"
 fi
-
-if [ -d dotfiles ]; then
-  cd dotfiles
-  git pull
-  cd
-fi
-
+  
