@@ -10,11 +10,11 @@ alias cp='cp -v'
 alias rm='rm -vrf'
 
 #Use coreutils ls
-alias ls='gls --color'
-alias ll='gls -ltr --color'
-alias lla='gls -ltrA --color'
-alias lss='gls -lA --color | grep "^l"'
-alias lsd='gls -lA --color | grep "^d"'
+alias ls='ls --color'
+alias ll='ls -ltr --color'
+alias lla='ls -ltrA --color'
+alias lss='ls -lA --color | grep "^l"'
+alias lsd='ls -lA --color | grep "^d"'
 
 
 ###########
