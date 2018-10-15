@@ -69,6 +69,7 @@ alias vial="vi ~/.aliases"
 alias wq="clear"
 alias svi="sudo vi"
 alias ci='vi'
+alias vo='vi'
 
 # Switch to Mirabeau Env Vars
 alias mira=". '/Users/dkelly/Dan/Mirabeau/AWS Environment Variables/MirabeauEnvVars.sh' && echo 'Mirabeau Env Vars'"
