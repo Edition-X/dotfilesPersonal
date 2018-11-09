@@ -6,12 +6,12 @@ if [ $USER == "dkelly" ]; then
     git clone -b Linux https://github.com/Edition-X/dotfilesPersonal.git .
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     cd
-    ln -sf $HOME/dotfiles/.bashrc $HOME/.bashrc
-    ln -sf $HOME/dotfiles/.bash_profile $HOME/.bash_profile
-    ln -sf $HOME/dotfiles/.bash_prompt $HOME/.bash_prompt
-    ln -sf $HOME/dotfiles/.functions $HOME/.functions
-    ln -sf $HOME/dotfiles/.aliases $HOME/.aliases
-    ln -sf $HOME/dotfiles/.vimrc $HOME/.vimrc
+    ln -sf /home/dkelly/dotfiles/.bashrc /home/dkelly/.bashrc
+    ln -sf /home/dkelly/dotfiles/.bash_profile /home/dkelly/.bash_profile
+    ln -sf /home/dkelly/dotfiles/.bash_prompt /home/dkelly/.bash_prompt
+    ln -sf /home/dkelly/dotfiles/.functions /home/dkelly/.functions
+    ln -sf /home/dkelly/dotfiles/.aliases /home/dkelly/.aliases
+    ln -sf /home/dkelly/dotfiles/.vimrc /home/dkelly/.vimrc
     source .bashrc
     echo "First login! Dotfiles added"
   else
@@ -24,4 +24,3 @@ if [ $USER == "dkelly" ]; then
 else
   echo "User: $USER, ignoring personal dotfiles"
 fi
-  
