@@ -39,4 +39,3 @@ if [ -f '/Users/dkelly/Downloads/google-cloud-sdk/completion.bash.inc' ]; then s
 # Unset AWS Env vars if set
 unset AWS_ACCESS_KEY_ID
 unset AWS_SECRET_ACCESS_KEY
-unset AWS_DEFAULT_REGION
