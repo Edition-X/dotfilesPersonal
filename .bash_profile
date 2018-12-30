@@ -29,6 +29,9 @@ fi
 
 # Add ansible bin location to PATH - May need to be updated when ansible or python is updated
 export PATH=/usr/local/Cellar/python@2/2.7.14_3/Frameworks/Python.framework/Versions/2.7/bin:$PATH
+# Add go to path
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$GOPATH/bin
 #export PYTHONPATH=/Users/dkelly/Library/Python/2.7/lib/python/site-packages
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/dkelly/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/dkelly/Downloads/google-cloud-sdk/path.bash.inc'; fi
