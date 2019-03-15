@@ -33,12 +33,15 @@ export PATH=/usr/local/Cellar/python@2/2.7.14_3/Frameworks/Python.framework/Vers
 export GOPATH=$(go env GOPATH)
 export PATH=$PATH:$GOPATH/bin
 #export PYTHONPATH=/Users/dkelly/Library/Python/2.7/lib/python/site-packages
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/dkelly/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/dkelly/Downloads/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/dkelly/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/dkelly/Downloads/google-cloud-sdk/completion.bash.inc'; fi
-
 # Unset AWS Env vars if set
 unset AWS_ACCESS_KEY_ID
 unset AWS_SECRET_ACCESS_KEY
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/dkelly/Dropbox (Mirabeau)/dkelly/Mirabeau/k8s/google-cloud-sdk/path.bash.inc' ]; then . '/Users/dkelly/Dropbox (Mirabeau)/dkelly/Mirabeau/k8s/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/dkelly/Dropbox (Mirabeau)/dkelly/Mirabeau/k8s/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/dkelly/Dropbox (Mirabeau)/dkelly/Mirabeau/k8s/google-cloud-sdk/completion.bash.inc'; fi
+
+# kubectl command completion
+source <(kubectl completion bash)

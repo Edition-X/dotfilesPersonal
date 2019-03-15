@@ -25,6 +25,7 @@ Plugin 'elzr/vim-json' " JSON syntax highlighting
 Plugin 'erikzaadi/vim-ansible-yaml' " Ansible syntax - http://erikzaadi.com/2015/11/15/linting-ansible-yaml-in-vim/
 Plugin 'tpope/vim-fugitive' " Ansible syntax - http://erikzaadi.com/2015/11/15/linting-ansible-yaml-in-vim/
 Plugin 'hashivim/vim-terraform'
+Plugin 'martinda/Jenkinsfile-vim-syntax'
 " Recomender settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
