@@ -123,7 +123,7 @@ set-option -g default-shell ${SHELL}
 set-option -g history-limit 10000
 
 # Plugins
-#set -g @plugin
+set -g @plugin 'powerline/powerline'
 #set -g @plugin 'tmux-plugins/tpm'
 #set -g @plugin 'tmux-plugins/tmux-resurrect'
 #set -g @plugin 'tmux-plugins/tmux-continuum'
@@ -131,4 +131,4 @@ set-option -g history-limit 10000
 ##set -g @continuum-boot 'on'
 #
 #run -b '~/.tmux/plugins/tpm/tpm'
-set-option -g default-shell /bin/bash
+#set-option -g default-shell /bin/bash

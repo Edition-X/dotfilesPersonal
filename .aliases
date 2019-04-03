@@ -5,10 +5,9 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 # mv, rm, cp
-alias mv='mv -v'
-alias cp='cp -rvp'
-alias rm='rm -vrf'
-
+alias mv='mv'
+alias cp='cp -r'
+alias rm='rm -rf'
 #Use coreutils ls
 alias ls='gls --color'
 alias ll='gls -ltr --color'
@@ -26,6 +25,7 @@ function clone() {
     cd $(basename ${1%.*})
 }
 
+alias g='git'
 alias gs='git status'
 alias ga='git add'
 alias gb='git branch'
@@ -50,7 +50,7 @@ alias emptytrash=' \
 '
 
 # Update installed Ruby gems, Homebrew, npm and their installed packages
-alias brew_update='brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew prune; brew doctor'
+alias brew_update='brew -v update; brew upgrade --force-bottle; brew cleanup --prune-prefix; brew doctor'
 
 # Speedtest
 alias speedtest="curl -o /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
