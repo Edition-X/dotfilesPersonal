@@ -23,12 +23,12 @@ POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='white'
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
-setopt appendhistory autocd beep nomatch notify
+setopt appendhistory autocd beep nomatch notify autopushd
 unsetopt extendedglob
 unsetopt HIST_VERIFY
-bindkey -e
+#bindkey -e
 
-source /Users/dkelly/.fonts/*.sh
+#source /Users/dkelly/.fonts/*.sh
 source /Users/dkelly/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-autosuggestions
@@ -52,24 +52,27 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 ########################
 ##        Aliases     ##
 ########################
-source ~/.aliases
+alias zrc='source ~/.zshrc'
+alias viz='vi ~/.zshrc'
+alias d='dirs -v | head -10'
+#source ~/.aliases
 #alias wq='clear'
 #alias mv='mv -v'
 #alias cp='cp -rvp'
 #alias rm='rm -rfv'
 #
 ### Git ##
-#alias g='git'
-#alias gs='git status'
-#alias ga='git add'
-#alias gc='git commit'
-#alias gb='git branch'
-#alias gba='git branch -a'
-#alias gco='git checkout'
-#alias gr='git remote -v'
-#alias gp='git pull --rebase'
-#alias gu='git pull --rebase && git push'
-#alias undopush='git push -f origin HEAD^:master'
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gco='git checkout'
+alias gr='git remote -v'
+alias gp='git pull --rebase'
+alias gu='git pull --rebase && git push'
+alias undopush='git push -f origin HEAD^:master'
 #
 ### Terraform/Terragrunt ##
 #alias tgg="terragrunt get -update"
