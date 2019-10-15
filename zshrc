@@ -5,7 +5,7 @@
 # /____|___/_| |_|_|  \___|
 
 DEFAULT_USER=dkelly
-POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 #POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
@@ -29,7 +29,7 @@ unsetopt HIST_VERIFY
 #bindkey -e
 
 #source /Users/dkelly/.fonts/*.sh
-source /Users/dkelly/antigen.zsh
+source /Users/dkelly/dot_files/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -52,27 +52,27 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 ########################
 ##        Aliases     ##
 ########################
-alias zrc='source ~/.zshrc'
-alias viz='vi ~/.zshrc'
-alias d='dirs -v | head -10'
-#source ~/.aliases
-#alias wq='clear'
-#alias mv='mv -v'
-#alias cp='cp -rvp'
-#alias rm='rm -rfv'
-#
-### Git ##
-alias g='git'
-alias gs='git status'
-alias ga='git add'
-alias gc='git commit'
-alias gb='git branch'
-alias gba='git branch -a'
-alias gco='git checkout'
-alias gr='git remote -v'
-alias gp='git pull --rebase'
-alias gu='git pull --rebase && git push'
-alias undopush='git push -f origin HEAD^:master'
+#alias zrc='source ~/.zshrc'
+#alias viz='vi ~/.zshrc'
+#alias d='dirs -v | head -10'
+##source ~/.aliases
+##alias wq='clear'
+##alias mv='mv -v'
+##alias cp='cp -rvp'
+##alias rm='rm -rfv'
+##
+#### Git ##
+#alias g='git'
+#alias gs='git status'
+#alias ga='git add'
+#alias gc='git commit'
+#alias gb='git branch'
+#alias gba='git branch -a'
+#alias gco='git checkout'
+#alias gr='git remote -v'
+#alias gp='git pull --rebase'
+#alias gu='git pull --rebase && git push'
+#alias undopush='git push -f origin HEAD^:master'
 #
 ### Terraform/Terragrunt ##
 #alias tgg="terragrunt get -update"
