@@ -52,26 +52,26 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 ########################
 ##        Aliases     ##
 ########################
-#alias zrc='source ~/.zshrc'
-#alias viz='vi ~/.zshrc'
-#alias d='dirs -v | head -10'
+alias zrc='source ~/.zshrc'
+alias viz='vi ~/.zshrc'
+alias d='dirs -v | head -10'
 ##source ~/.aliases
-##alias wq='clear'
-##alias mv='mv -v'
-##alias cp='cp -rvp'
-##alias rm='rm -rfv'
+alias wq='clear'
+alias mv='mv -v'
+alias cp='cp -rv'
+alias rm='rm -riv'
 ##
 #### Git ##
-#alias g='git'
-#alias gs='git status'
-#alias ga='git add'
-#alias gc='git commit'
-#alias gb='git branch'
-#alias gba='git branch -a'
-#alias gco='git checkout'
-#alias gr='git remote -v'
-#alias gp='git pull --rebase'
-#alias gu='git pull --rebase && git push'
+alias g='git'
+alias gs='git status'
+#lias ga='git add'
+alias gc='git commit'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gco='git checkout'
+alias gr='git remote -v'
+alias gp='git pull'
+alias gu='git push'
 #alias undopush='git push -f origin HEAD^:master'
 #
 ### Terraform/Terragrunt ##
