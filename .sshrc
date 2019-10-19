@@ -1,24 +1,20 @@
-if [ $USER == "dkelly" ]; then
+if [ $USER == "adminkelly" ]; then
   if [ ! -d dotfiles ]; then
     mkdir dotfiles
     mkdir -p .vim/bundle
     cd dotfiles
-    git clone -b Linux https://github.com/Edition-X/dotfilesPersonal.git .
+    git clone -b Linux_zsh https://github.com/Edition-X/dotfilesPersonal.git .
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     cd
-    ln -sf /home/dkelly/dotfiles/.bashrc /home/dkelly/.bashrc
-    ln -sf /home/dkelly/dotfiles/.bash_profile /home/dkelly/.bash_profile
-    ln -sf /home/dkelly/dotfiles/.bash_prompt /home/dkelly/.bash_prompt
-    ln -sf /home/dkelly/dotfiles/.functions /home/dkelly/.functions
-    ln -sf /home/dkelly/dotfiles/.aliases /home/dkelly/.aliases
-    ln -sf /home/dkelly/dotfiles/.vimrc /home/dkelly/.vimrc
-    source .bashrc
+    ln -sf /home/adminkelly/dotfiles/.zshrc /home/adminkelly/.zshrc
+    ln -sf /home/adminkelly/dotfiles/.sshrc /home/adminkelly/.sshrc
+    ln -sf /home/adminkelly/dotfiles/.vimrc /home/adminkelly/.vimrc
+    chsh -s $(which zsh)
     echo "First login! Dotfiles added"
   else
     cd dotfiles
     git pull
     cd
-    source .bashrc
     echo "Pulling dotfiles"
   fi
 else
