@@ -5,7 +5,7 @@
 # /____|___/_| |_|_|  \___|
 
 DEFAULT_USER=dkelly
-POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 #POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
@@ -44,7 +44,7 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen apply
 
 export TERM=xterm-256color
-export EDITOR=vim
+export EDITOR=/usr/bin/vim
 ## If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
