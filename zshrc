@@ -28,14 +28,13 @@ unsetopt extendedglob
 unsetopt HIST_VERIFY
 #bindkey -e
 
-#source /Users/dkelly/.fonts/*.sh
+source /Users/dkelly/.fonts/*.sh
 source /Users/dkelly/dot_files/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle common-aliases
-#antigen bundle zsh_reload
-#antigen bundle command-not-found
+antigen bundle zsh_reload
 #antigen bundle z
 #antigen bundle andrewferrier/fzf-z
 antigen theme bhilburn/powerlevel9k powerlevel9k
@@ -52,7 +51,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 ########################
 ##        Aliases     ##
 ########################
-alias zrc='source ~/.zshrc'
+
+#alias zrc='source ~/.zshrc'
 alias viz='vi ~/.zshrc'
 alias d='dirs -v | head -10'
 ##source ~/.aliases
