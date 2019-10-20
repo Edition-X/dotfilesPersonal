@@ -56,6 +56,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 ########################
 
 #alias zrc='source ~/.zshrc'
+alias brew_update='brew -v update; brew upgrade --force-bottle; brew cleanup --prune -v; brew doctor -v'
 alias viz='vi ~/.zshrc'
 alias d='dirs -v | head -10'
 ##source ~/.aliases
