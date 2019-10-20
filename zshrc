@@ -55,11 +55,10 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 ##        Aliases     ##
 ########################
 
-#alias zrc='source ~/.zshrc'
 alias brew_update='brew -v update; brew upgrade --force-bottle; brew cleanup --prune -v; brew doctor -v'
+alias zrc='source ~/.zshrc'
 alias viz='vi ~/.zshrc'
 alias d='dirs -v | head -10'
-##source ~/.aliases
 alias wq='clear'
 alias mv='mv -v'
 alias cp='cp -rv'
@@ -78,6 +77,9 @@ alias gp='git pull'
 alias gu='git push'
 #alias undopush='git push -f origin HEAD^:master'
 #
+
+
+
 ### Terraform/Terragrunt ##
 #alias tgg="terragrunt get -update"
 #alias tgp="terragrunt plan"
@@ -92,4 +94,3 @@ alias gu='git push'
 #alias tfd="terraform destroy"
 #alias tfda="terraform destroy -auto-approve"
 #
-#alias brew_update='brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew prune; brew doctor'
