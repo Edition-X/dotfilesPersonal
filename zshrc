@@ -42,6 +42,9 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 
 antigen apply
 
+
+screenfetch
+
 export TERM=xterm-256color
 export EDITOR=/usr/bin/vim
 ## If you come from bash you might have to change your $PATH.
