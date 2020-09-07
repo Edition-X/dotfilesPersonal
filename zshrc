@@ -5,12 +5,12 @@
 # /____|___/_| |_|_|  \___|
 
 DEFAULT_USER=dkelly
-POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 #POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context os_icon custom_internet_signal custom_battery_status_joined ssh root_indicator dir dir_writable vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon custom_internet_signal custom_battery_status_joined ssh root_indicator dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time  status  time)
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{green}%F{black} \uf155 %f%F{green}%k\ue0b0%f "
 POWERLEVEL9K_DIR_HOME_BACKGROUND='mediumpurple3'
@@ -19,6 +19,9 @@ POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='darkorange'
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='black'
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='blue'
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='white'
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_SHORTEN_DELIMITER=".."
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 
 HISTFILE=~/.histfile
 HISTSIZE=10000
@@ -28,8 +31,8 @@ unsetopt extendedglob
 unsetopt HIST_VERIFY
 #bindkey -e
 
-source /Users/dkelly/.fonts/*.sh
-source /Users/dkelly/dot_files/antigen.zsh
+#source /Users/dkelly/.fonts/*.sh
+source /Users/dan/Documents/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -43,12 +46,12 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen apply
 
 
-screenfetch
+#screenfetch
 
 export TERM=xterm-256color
-export EDITOR=/usr/bin/vim
+export EDITOR=vim
 ## If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:/Users/dan/Library/Python/3.8/bin
 
 
 ########################
@@ -67,7 +70,7 @@ alias rm='rm -riv'
 #### Git ##
 alias g='git'
 alias gs='git status'
-#lias ga='git add'
+alias ga='git add'
 alias gc='git commit'
 alias gb='git branch'
 alias gba='git branch -a'
@@ -94,3 +97,5 @@ alias gu='git push'
 #alias tfd="terraform destroy"
 #alias tfda="terraform destroy -auto-approve"
 #
+#export PATH="/usr/local/opt/qt/bin:$PATH"
+complete -C aws_completer aws

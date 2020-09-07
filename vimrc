@@ -1,3 +1,6 @@
+set ttymouse=xterm2
+set mouse=a
+
 set nocompatible " required
 filetype off " required
 " set the runtime path to include Vundle and initialise
@@ -18,7 +21,6 @@ Plugin 'jnurmine/Zenburn'		  " Colour scheme terminal
 Plugin 'altercation/vim-colors-solarized' " Colour scheme in GUI mode
 Plugin 'scrooloose/nerdtree'		  " Tree file structure in Vim
 Plugin 'jistr/vim-nerdtree-tabs'	  " Make Tabs better for NerdTree
-"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}  " Status bar
 Plugin 'https://github.com/m-kat/aws-vim' "Text Complete for AWS CloudFormation
 Plugin 'elzr/vim-json' " JSON syntax highlighting
 "Plugin 'pearofducks/ansible-vim' " Ansible 2.0, it supports YAML playbooks, Jinja2 templates, and Ansible's hosts files
@@ -26,7 +28,10 @@ Plugin 'erikzaadi/vim-ansible-yaml' " Ansible syntax - http://erikzaadi.com/2015
 Plugin 'tpope/vim-fugitive' " Ansible syntax - http://erikzaadi.com/2015/11/15/linting-ansible-yaml-in-vim/
 Plugin 'hashivim/vim-terraform'
 Plugin 'martinda/Jenkinsfile-vim-syntax'
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}  " Status bar
 Plugin 'Lokaltog/vim-powerline'
+Plugin 'rodjek/vim-puppet'
+
 " Recomender settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
