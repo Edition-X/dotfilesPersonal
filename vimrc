@@ -30,7 +30,6 @@ Plugin 'hashivim/vim-terraform'
 Plugin 'martinda/Jenkinsfile-vim-syntax'
 "Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}  " Status bar
 Plugin 'Lokaltog/vim-powerline'
-Plugin 'rodjek/vim-puppet'
 
 " Recomender settings
 set statusline+=%#warningmsg#
